@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     get '/welcome/:first_name', to: 'welcome#show'
 
     get 'user/:id', to: 'user#show'
+
+    get 'gossip/:id', to: 'gossip#show'
     
     get '/contact', to: 'contact#show'
     get '/team', to: 'team#show'
