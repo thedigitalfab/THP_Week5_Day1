@@ -9,5 +9,11 @@ class CreatePrivateMessages < ActiveRecord::Migration[6.0]
       
       t.timestamps
     end
+
+    # N-N relation between 'Private_Messages' and 'Recipients:users'
+    create_table :private_messages_recipients do |t|
+      t.belongs_to :private_message, index: true
+      t.belongs_to :recipients, index: true
+    end
   end
 end
