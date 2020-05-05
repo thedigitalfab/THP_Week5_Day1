@@ -11,6 +11,9 @@
 
         <!-- Javascript -->
         <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+        <!-- font-awsome -->
+        <script src="https://kit.fontawesome.com/7ce4239f91.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -25,18 +28,12 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                            Exercice
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="/welcome/Michel">Hidden URL</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -54,6 +51,55 @@
         </nav>
 
         <%= yield %>
+
+        <!-- Footer -->
+        <br/>
+	    <section id="footer">
+		    <div class="container">
+			    <div class="row text-center text-xs-center text-sm-left text-md-left">
+				    <div class="col-xs-12 col-sm-4 col-md-4">
+					    <h5>Quick links</h5>
+					    <ul class="list-unstyled quick-links">
+						    <li><a href="/"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						    <li><a href="/"><i class="fa fa-angle-double-right"></i>About</a></li>
+                            <li><a href="/"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                            <li><a href="/"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                        </ul>
+				    </div>
+				    <div class="col-xs-12 col-sm-4 col-md-4">
+					    <h5>Quick links</h5>
+					    <ul class="list-unstyled quick-links">
+                            <li><a href="/"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                            <li><a href="/"><i class="fa fa-angle-double-right"></i>About</a></li>
+                            <li><a href="/"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                            <li><a href="/"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+					    </ul>
+				    </div>
+				    <div class="col-xs-12 col-sm-4 col-md-4">
+					    <h5>Quick links</h5>
+					    <ul class="list-unstyled quick-links">
+                            <li><a href="/"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                            <li><a href="/"><i class="fa fa-angle-double-right"></i>About</a></li>
+                            <li><a href="/"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                            <li><a href="/"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+					    </ul>
+				    </div>
+			    </div>
+			    <div class="row">
+				    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					    <ul class="list-unstyled list-inline social text-center">
+                            <li class="list-inline-item"><a href="/"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="/"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="/"><i class="fa fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="/"><i class="fa fa-google-plus"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="/contact"><i class="fa fa-envelope"></i></a></li>
+					    </ul>
+				    </div>
+				    <hr>
+			    </div>
+		    </div>
+        </section>
+        <!-- ./Footer -->
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
